@@ -2,3 +2,5 @@ __pycache__/
 .ipynb_checkpoints/
 *.pyc
 .DS_Store
+sales_5000.csv
+cleaned_sales_data.csv

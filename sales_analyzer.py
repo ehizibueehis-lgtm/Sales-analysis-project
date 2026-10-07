@@ -47,7 +47,6 @@ class SalesAnalyzer:
         return self.df
 
     def generate_summary(self):
-        #Generates a high-level business summary.#
         if self.df is None:
             return "No data available."
 
@@ -58,7 +57,6 @@ class SalesAnalyzer:
         }
 
     def save_cleaned_data(self, output_dir='data', filename='cleaned_sales_data.csv'):
-        #Saves the fully processed DataFrame to a CSV.#
         os.makedirs(output_dir, exist_ok=True)
         file_path = os.path.join(output_dir, filename)
         self.df.to_csv(file_path, index=False)
